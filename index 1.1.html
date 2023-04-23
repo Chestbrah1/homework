@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1>Удаление кнопок</h1>
+	<button id="button1">Кнопка 1</button>
+	<button id="button2">Кнопка 2</button>
+	<button id="button3">Кнопка 3</button>
+	<button id="button4">Кнопка 4</button>
+	<button id="button5">Кнопка 5</button>
+	<button id="button6">Кнопка 6</button>
+	<button id="button7">Кнопка 7</button>
+	<button id="button8">Кнопка 8</button>
+	<button id="button9">Кнопка 9</button>
+	<button id="button10">Кнопка 10</button>
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+
+        function removeButton(button) {
+	        button.parentNode.removeChild(button);
+        }
+
+        buttons.forEach((button) => {
+	    button.addEventListener('click', () => {
+		
+		removeButton(button);
+    });
+});
+    </script>
+</body>
+</html>

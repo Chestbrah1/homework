@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="buttons-container">
+        <button>Кнопка 1</button>
+        <button>Кнопка 2</button>
+        <button>Кнопка 3</button>
+        <button>Кнопка 4</button>
+        <button>Кнопка 5</button>
+        <button>Кнопка 6</button>
+        <button>Кнопка 7</button>
+        <button>Кнопка 8</button>
+        <button>Кнопка 9</button>
+        <button>Кнопка 10</button>
+      </div>
+
+      <script>
+        const buttonsContainer = document.getElementById('buttons-container');
+const Buttons = buttonsContainer.querySelectorAll('button');
+
+Buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    Buttons.forEach(b => b.style.display = 'none');
+  });
+});
+
+      </script>
+</body>
+</html>
